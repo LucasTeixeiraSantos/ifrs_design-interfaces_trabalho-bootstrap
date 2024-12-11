@@ -25,10 +25,12 @@ h3 {
 }
 
 .card img {
-  width: 100%;
+  width: 60%;
+  align-self: center;
   height: auto;
   object-fit: contain;
 }
+
 
 .card-body {
   background-color: #fff;
@@ -41,7 +43,7 @@ footer {
 }
 
 .carousel-inner img {
-  width: 100%;
+  width: 40%;
   height: auto;
   margin: 0 auto;
 }
