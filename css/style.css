@@ -2,26 +2,26 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #f8f9fa;
   margin: 0;
+  color: #212529;
 }
 
 header {
   background-color: #343a40;
 }
 
-h1, h2, h3 {
-  color: rgb(0, 0, 0);
-}
-
 h1 {
   font-size: 2.5rem;
+  color: #ffffff;
 }
 
 h2 {
   font-size: 2rem;
+  color: #212529;
 }
 
 h3 {
   font-size: 1.75rem;
+  color: #212529;
 }
 
 .card img {
@@ -37,7 +37,7 @@ h3 {
 
 footer {
   background-color: #343a40;
-  color: white;
+  color: #ffffff;
 }
 
 .carousel-inner img {
@@ -48,17 +48,17 @@ footer {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: black;
+  background-color: #6c757d;
   border-radius: 50%;
 }
 
 .carousel-inner img {
-  border: 2px solid black;
+  border: 2px solid #343a40;
   border-radius: 5px;
 }
 
 #formulario {
-  background-color: #f8f9fa;
+  background-color: #ffffff;
   padding: 40px 0;
 }
 
@@ -69,19 +69,25 @@ footer {
 .table th, .table td {
   text-align: center;
   vertical-align: middle;
+  color: #343a40;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: #f2f2f2;
+  background-color: #e9ecef;
 }
 
 button, .btn {
   font-size: 1rem;
-  color: #fff;
+  color: #ffffff;
   background-color: #007bff;
   border: none;
   padding: 10px 15px;
   cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button:hover, .btn:hover {
@@ -97,17 +103,18 @@ a:hover {
   text-decoration: none;
 }
 
-[role="button"] {
+[role="button"], button, .btn {
   outline: none;
   border: none;
+  background-color: #007bff;
+}
+
+[role="button"]:hover, button:hover, .btn:hover {
+  background-color: #0056b3;
 }
 
 [aria-label] {
   font-size: 1rem;
-}
-
-body * {
-  line-height: 1.5;
 }
 
 img {
@@ -123,11 +130,17 @@ img {
   padding: 10px;
 }
 
-.button-large {
-  min-width: 44px;
-  min-height: 44px;
-}
-
 .hidden {
   display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
